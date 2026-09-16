@@ -1,1 +1,438 @@
-home.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OnBase On Site, Before The Sun's Up</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo"><span class="dot"></span>onbase</div>
+  <nav>
+    <a href="#trades">Trades</a>
+    <a href="#story">How it works</a>
+    <a href="#taste">Reviews</a>
+  </nav>
+  <button class="crew-btn" id="crewBtn">Crew <span class="crew-count" id="crewCount">0</span></button>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <video id="heroVideo" autoplay muted loop playsinline
+      poster="https://assets.mixkit.co/videos/31473/31473-thumb-360-0.jpg">
+      <source src="https://assets.mixkit.co/videos/31473/31473-360.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow-plain"><span class="live-dot"></span>Verified workers, dispatched same day</div>
+      <h1 class="hero-title">On site,<br>before the<br><em>sun's up.</em></h1>
+      <p class="hero-sub">Book a mason, tiler or helper the night before they're already at your gate, tools in hand, when the site opens.</p>
+      <div class="hero-ctas">
+        <a href="#trades" class="btn-primary">Book a worker</a>
+        <a href="#story" class="btn2"><span class="spn2">How it works</span></a>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="hero-badge">
+        <div class="avatars"><span>RK</span><span>AS</span><span>+</span></div>
+        <p><strong>500+ verified workers</strong> already on the roster, matched in under 24 hours.</p>
+      </div>
+      <button class="mute-toggle" id="muteToggle" aria-label="Mute background video">
+        <svg class="icon-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+        <svg class="icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="stats wrap reveal">
+  <div class="stats-row">
+    <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Verified workers on the roster</div></div>
+    <div class="stat"><div class="stat-num">24hr</div><div class="stat-label">Average time to dispatch</div></div>
+    <div class="stat"><div class="stat-num">7</div><div class="stat-label">Trades bookable on demand</div></div>
+    <div class="stat"><div class="stat-num">0</div><div class="stat-label">Booking fees, ever</div></div>
+  </div>
+</div>
+
+<section id="trades">
+  <div class="wrap">
+    <div class="trades-header reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <h2>Every trade your site needs.</h2>
+        <p>Each worker is ID-verified before they're listed, and booked at one fixed daily rate no agents, no haggling at the gate.</p>
+      </div>
+      <div class="trade-nav-controls">
+        <button class="trade-nav-btn prev" id="tradePrevBtn" aria-label="Previous trades">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="trade-nav-btn next" id="tradeNextBtn" aria-label="Next trades">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+    <div class="trade-carousel-wrap">
+      <div class="trade-scroll" id="tradeScroll">
+      <!-- 1. Brick Mason Pair -->
+      <div class="trade-card tc-brick reveal stagger-1">
+        <div class="blob"></div>
+        <div class="bg">
+          <div class="trade-content">
+            <span class="trade-tag">Masonry</span>
+            <div class="trade-name">Brick Mason Pair</div>
+            <div class="trade-desc">Skilled bricklayer with active helper for precision walling, bonding &amp; brickwork.</div>
+          </div>
+          <div class="trade-foot">
+            <div class="trade-price-box">
+              <span class="trade-price">₹1900</span>
+              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
+            </div>
+            <button class="add-btn" data-add aria-label="Add Brick Mason Pair">ADD</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Plaster Mason Pair -->
+      <div class="trade-card tc-plaster reveal stagger-2">
+        <div class="blob"></div>
+        <div class="bg">
+          <div class="trade-content">
+            <span class="trade-tag">Plastering</span>
+            <div class="trade-name">Plaster Mason Pair</div>
+            <div class="trade-desc">Smooth internal &amp; external wall plastering, screed leveling and crack-free finish.</div>
+          </div>
+          <div class="trade-foot">
+            <div class="trade-price-box">
+              <span class="trade-price">₹1900</span>
+              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
+            </div>
+            <button class="add-btn" data-add aria-label="Add Plaster Mason Pair">ADD</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Mason Helper -->
+      <div class="trade-card tc-helper reveal stagger-3">
+        <div class="blob"></div>
+        <div class="bg">
+          <div class="trade-content">
+            <span class="trade-tag">Site Labor</span>
+            <div class="trade-name">Mason Helper</div>
+            <div class="trade-desc">Mortar and cement mixing, brick transport, scaffolding assist and clean staging.</div>
+          </div>
+          <div class="trade-foot">
+            <div class="trade-price-box">
+              <span class="trade-price">₹750</span>
+              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
+            </div>
+            <button class="add-btn" data-add aria-label="Add Mason Helper">ADD</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Tile Mason Pair -->
+      <div class="trade-card tc-tile reveal stagger-4">
+        <div class="blob"></div>
+        <div class="bg">
+          <div class="trade-content">
+            <span class="trade-tag">Flooring</span>
+            <div class="trade-name">Tile Mason Pair</div>
+            <div class="trade-desc">Vitrified, ceramic &amp; marble tile laying, laser alignment, grouting and skirting.</div>
+          </div>
+          <div class="trade-foot">
+            <div class="trade-price-box">
+              <span class="trade-price">₹2350</span>
+              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
+            </div>
+            <button class="add-btn" data-add aria-label="Add Tile Mason Pair">ADD</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Demolition Worker -->
+      <div class="trade-card tc-demolition reveal stagger-5">
+        <div class="blob"></div>
+        <div class="bg">
+          <div class="trade-content">
+            <span class="trade-tag">Demolition</span>
+            <div class="trade-name">Demolition Worker</div>
+            <div class="trade-desc">Heavy masonry breaking, RCC chipping, tile stripping, trenching &amp; rubble disposal.</div>
+          </div>
+          <div class="trade-foot">
+            <div class="trade-price-box">
+              <span class="trade-price">₹850</span>
+              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
+            </div>
+            <button class="add-btn" data-add aria-label="Add Demolition Worker">ADD</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Centing Pair -->
+      <div class="trade-card tc-centing reveal stagger-6">
+        <div class="blob"></div>
+        <div class="bg">
+          <div class="trade-content">
+            <span class="trade-tag">Formwork</span>
+            <div class="trade-name">Centing Pair</div>
+            <div class="trade-desc">Column, beam and slab shuttering, wooden staging, prop support &amp; box assembly.</div>
+          </div>
+          <div class="trade-foot">
+            <div class="trade-price-box">
+              <span class="trade-price">₹2150</span>
+              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
+            </div>
+            <button class="add-btn" data-add aria-label="Add Centing Pair">ADD</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Reinforcement Karigar -->
+      <div class="trade-card tc-rebar reveal stagger-7">
+        <div class="blob"></div>
+        <div class="bg">
+          <div class="trade-content">
+            <span class="trade-tag">Steel &amp; Rebar</span>
+            <div class="trade-name">Reinforcement Karigar</div>
+            <div class="trade-desc">Steel rebar cutting, bending, column cage binding &amp; slab reinforcement mesh tying.</div>
+          </div>
+          <div class="trade-foot">
+            <div class="trade-price-box">
+              <span class="trade-price">₹2150</span>
+              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
+            </div>
+            <button class="add-btn" data-add aria-label="Add Reinforcement Karigar">ADD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="trade-floating-next" id="tradeFloatingNext" aria-label="View more trades">
+      <span>More</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+  </div>
+</div>
+</section>
+
+<section id="story" class="story-section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>A booking made tonight, working by morning.</h2>
+      <p>No phone calls, no contractors to chase down. Scroll to see what happens between the tap and the tools on site.</p>
+    </div>
+
+    <div class="story-grid" id="storyGrid">
+      <div class="story-visual-col">
+        <div class="story-card" id="storyCard">
+          <div class="story-progress-track">
+            <span><i id="prog1"></i></span>
+            <span><i id="prog2"></i></span>
+            <span><i id="prog3"></i></span>
+          </div>
+
+          <div class="story-time-block">
+            <div class="story-clock" id="storyClockLabel">6:00 PM · You</div>
+            <div class="story-time" id="storyTime">6:00 PM</div>
+          </div>
+
+          <div class="story-icon-stage">
+            <!-- step 1: tapping a request into the app -->
+            <svg class="story-icon on" data-icon="1" viewBox="0 0 150 150" fill="none">
+              <rect x="45" y="18" width="60" height="114" rx="14" stroke="#f6f2e9" stroke-width="3"/>
+              <line x1="63" y1="30" x2="87" y2="30" stroke="#f6f2e9" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="75" cy="118" r="4" fill="#f6f2e9"/>
+              <rect x="58" y="48" width="34" height="34" rx="8" fill="#ff6900"/>
+              <path d="M67 65 l6 6 12 -12" stroke="#121c29" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="58" y1="96" x2="92" y2="96" stroke="#f6f2e9" stroke-width="2.5" stroke-linecap="round" opacity=".6"/>
+              <line x1="58" y1="105" x2="80" y2="105" stroke="#f6f2e9" stroke-width="2.5" stroke-linecap="round" opacity=".4"/>
+            </svg>
+            <!-- step 2: worker matched, confirmed badge -->
+            <svg class="story-icon" data-icon="2" viewBox="0 0 150 150" fill="none">
+              <circle cx="75" cy="66" r="46" stroke="#f6f2e9" stroke-width="3"/>
+              <circle cx="75" cy="66" r="46" stroke="#ff6900" stroke-width="3" stroke-dasharray="289" stroke-dashoffset="72" stroke-linecap="round" transform="rotate(-90 75 66)"/>
+              <circle cx="75" cy="55" r="14" fill="#f6f2e9"/>
+              <path d="M50 96 q25 -22 50 0" stroke="#f6f2e9" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <circle cx="118" cy="98" r="16" fill="#ff6900"/>
+              <path d="M111 98 l5 5 10 -10" stroke="#121c29" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <!-- step 3: hard hat, tools on site -->
+            <svg class="story-icon" data-icon="3" viewBox="0 0 150 150" fill="none">
+              <path d="M32 96 q43 -58 86 0 z" stroke="#f6f2e9" stroke-width="3" stroke-linejoin="round"/>
+              <line x1="24" y1="96" x2="126" y2="96" stroke="#f6f2e9" stroke-width="4" stroke-linecap="round"/>
+              <rect x="66" y="64" width="18" height="14" rx="3" fill="#ff6900"/>
+              <circle cx="112" cy="40" r="15" stroke="#ff6900" stroke-width="3"/>
+              <path d="M112 40 L112 28 M112 40 L121 47" stroke="#ff6900" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <div class="story-caption" id="storyCaption">Tell us the trade and headcount for tomorrow.</div>
+        </div>
+      </div>
+
+      <div class="story-steps">
+        <div class="st-step" data-step="1">
+          <span class="tag">6:00 PM · You</span>
+          <h3>Tell us the trade &amp; headcount</h3>
+          <p>Pick the worker type, how many hands you need, and the date they should be on site.</p>
+        </div>
+        <div class="st-step" data-step="2">
+          <span class="tag">6:45 PM · OnBase</span>
+          <h3>A verified worker is matched</h3>
+          <p>We lock a fixed daily rate and confirm the worker in the app no back and forth, no agents.</p>
+        </div>
+        <div class="st-step" data-step="3">
+          <span class="tag">7:00 AM · Site</span>
+          <h3>Worker clocks in on site</h3>
+          <p>Tools in hand, ready to start before the rest of the crew has even reached the gate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-section">
+  <div class="wrap">
+    <blockquote class="reveal">"A mason booked for tomorrow is worth more than three you're still calling today. Everything about how we work is built around getting that call answered in minutes, not hours."</blockquote>
+    <div class="quote-cite">Note from our operations desk, Ahmedabad</div>
+  </div>
+</section>
+
+<section id="taste">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>What contractors say after the first booking.</h2>
+      <p>Real feedback from the contractors and supervisors who book through OnBase.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal stagger-1">
+        <svg class="testi-mark" viewBox="0 0 32 24" fill="none"><path d="M0 24V14.4C0 6.4 4.8 1.2 12.8 0L14.4 3.6C9.6 5.2 7.2 8 7.2 12H12.8V24H0ZM17.6 24V14.4C17.6 6.4 22.4 1.2 30.4 0L32 3.6C27.2 5.2 24.8 8 24.8 12H30.4V24H17.6Z" fill="#FFE1C2"/></svg>
+        <p class="testi-quote">Had three masons on site by 7am no calls made the night before. My supervisor thought I'd hired an agency.</p>
+        <div class="testi-who"><span class="testi-avatar">RP</span><div><strong>Ramesh Patel</strong><span>Site Contractor, Vadodara</span></div></div>
+      </div>
+      <div class="testi-card reveal stagger-2">
+        <svg class="testi-mark" viewBox="0 0 32 24" fill="none"><path d="M0 24V14.4C0 6.4 4.8 1.2 12.8 0L14.4 3.6C9.6 5.2 7.2 8 7.2 12H12.8V24H0ZM17.6 24V14.4C17.6 6.4 22.4 1.2 30.4 0L32 3.6C27.2 5.2 24.8 8 24.8 12H30.4V24H17.6Z" fill="#FFE1C2"/></svg>
+        <p class="testi-quote">Finally a helper who actually shows up when he says he will. That alone is worth the booking fee, except there isn't one.</p>
+        <div class="testi-who"><span class="testi-avatar">FS</span><div><strong>Farah Sheikh</strong><span>Interior Contractor</span></div></div>
+      </div>
+      <div class="testi-card reveal stagger-3">
+        <svg class="testi-mark" viewBox="0 0 32 24" fill="none"><path d="M0 24V14.4C0 6.4 4.8 1.2 12.8 0L14.4 3.6C9.6 5.2 7.2 8 7.2 12H12.8V24H0ZM17.6 24V14.4C17.6 6.4 22.4 1.2 30.4 0L32 3.6C27.2 5.2 24.8 8 24.8 12H30.4V24H17.6Z" fill="#FFE1C2"/></svg>
+        <p class="testi-quote">Booked at midnight, confirmed before I woke up. It changed how I plan the whole week, not just tomorrow.</p>
+        <div class="testi-who"><span class="testi-avatar">VS</span><div><strong>Vikram Solanki</strong><span>Civil Contractor</span></div></div>
+      </div>
+      <div class="testi-card reveal stagger-1">
+        <svg class="testi-mark" viewBox="0 0 32 24" fill="none"><path d="M0 24V14.4C0 6.4 4.8 1.2 12.8 0L14.4 3.6C9.6 5.2 7.2 8 7.2 12H12.8V24H0ZM17.6 24V14.4C17.6 6.4 22.4 1.2 30.4 0L32 3.6C27.2 5.2 24.8 8 24.8 12H30.4V24H17.6Z" fill="#FFE1C2"/></svg>
+        <p class="testi-quote">Fixed rate before the gate, no haggling once the worker's on site. No surprises for either side on payday.</p>
+        <div class="testi-who"><span class="testi-avatar">AR</span><div><strong>Ashok Rathva</strong><span>Project Supervisor</span></div></div>
+      </div>
+      <div class="testi-card reveal stagger-2">
+        <svg class="testi-mark" viewBox="0 0 32 24" fill="none"><path d="M0 24V14.4C0 6.4 4.8 1.2 12.8 0L14.4 3.6C9.6 5.2 7.2 8 7.2 12H12.8V24H0ZM17.6 24V14.4C17.6 6.4 22.4 1.2 30.4 0L32 3.6C27.2 5.2 24.8 8 24.8 12H30.4V24H17.6Z" fill="#FFE1C2"/></svg>
+        <p class="testi-quote">This replaced my entire contractor's phonebook. I haven't made a cold call to find labour in months.</p>
+        <div class="testi-who"><span class="testi-avatar">MJ</span><div><strong>Meera Joshi</strong><span>Builder</span></div></div>
+      </div>
+      <div class="testi-card reveal stagger-3">
+        <svg class="testi-mark" viewBox="0 0 32 24" fill="none"><path d="M0 24V14.4C0 6.4 4.8 1.2 12.8 0L14.4 3.6C9.6 5.2 7.2 8 7.2 12H12.8V24H0ZM17.6 24V14.4C17.6 6.4 22.4 1.2 30.4 0L32 3.6C27.2 5.2 24.8 8 24.8 12H30.4V24H17.6Z" fill="#FFE1C2"/></svg>
+        <p class="testi-quote">The scaffolding crew showed up with their own harnesses, ready to climb. Didn't have to explain a thing.</p>
+        <div class="testi-who"><span class="testi-avatar">DC</span><div><strong>Dilip Chauhan</strong><span>Site Engineer</span></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee-row r1" id="row1"></div>
+    <div class="marquee-row r2" id="row2"></div>
+  </div>
+</section>
+
+<section class="game-section">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-left:auto; margin-right:auto; text-align:center;">
+      <h2>Lay a few bricks, just because.</h2>
+      <p style="margin-left:auto; margin-right:auto;">Click the bricks before they drift off the top of the wall.</p>
+    </div>
+    <div class="game-canvas-wrap reveal">
+      <div class="game-score">Laid: <span id="score">0</span></div>
+      <canvas id="game"></canvas>
+    </div>
+    <div class="game-hint">Click or tap anywhere on the bricks</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-tag">Every site deserves a crew that shows up.</div>
+      <div class="footer-right-col">
+        <div class="footer-links">
+          <div>
+            <a href="#trades">Trades</a>
+            <a href="#story">How it works</a>
+            <a href="#taste">Reviews</a>
+          </div>
+          <div>
+            <a href="mailto:support@onbase.com">Support</a>
+            <a href="#trades">Bookings</a>
+          </div>
+        </div>
+        <ul class="example-2">
+          <li class="icon-content">
+            <a href="https://www.instagram.com/onbasenow" aria-label="Instagram" data-social="instagram" target="_blank" rel="noopener noreferrer">
+              <div class="filled"></div>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <div class="tooltip">Instagram</div>
+          </li>
+          <li class="icon-content">
+            <a href="https://www.linkedin.com/company/onbase" aria-label="LinkedIn" data-social="linkedin" target="_blank" rel="noopener noreferrer">
+              <div class="filled"></div>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <div class="tooltip">LinkedIn</div>
+          </li>
+          <li class="icon-content">
+            <a href="https://twitter.com/onbasenow" aria-label="Twitter" data-social="twitter" target="_blank" rel="noopener noreferrer">
+              <div class="filled"></div>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <div class="tooltip">Twitter</div>
+          </li>
+          <li class="icon-content">
+            <a href="https://facebook.com/onbase" aria-label="Facebook" data-social="facebook" target="_blank" rel="noopener noreferrer">
+              <div class="filled"></div>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+            <div class="tooltip">Facebook</div>
+          </li>
+          <li class="icon-content">
+            <a href="https://wa.me/919574089943" aria-label="WhatsApp" data-social="whatsapp" target="_blank" rel="noopener noreferrer">
+              <div class="filled"></div>
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+            </a>
+            <div class="tooltip">WhatsApp</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 OnBase, Ahmedabad.</span>
+      <span>Verified workers. Fixed rates. No delays.</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/main.ts"></script>
+
+</body>
+</html>
