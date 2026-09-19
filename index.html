@@ -189,7 +189,7 @@
 </div>
 </section>
 
-<section id="how-to-book" class="how-section">
+<section id="how-to-book" class="story-section">
   <div class="wrap">
     <div class="section-head reveal">
       <div class="eyebrow-plain" style="margin-bottom:12px;"><span class="live-dot"></span>Easy 3-step booking</div>
@@ -197,9 +197,68 @@
       <p>From choosing your trade to worker arrival on site — see how fast and seamless booking is inside the OnBase app.</p>
     </div>
 
-    <div class="how-steps-grid">
+    <!-- DESKTOP VIEW: Interactive Sticky Split-Scroll -->
+    <div class="story-grid how-desktop-only" id="storyGrid">
+      <div class="story-visual-col">
+        <div class="story-card" id="storyCard">
+          <div class="story-progress-track">
+            <span><i id="prog1"></i></span>
+            <span><i id="prog2"></i></span>
+            <span><i id="prog3"></i></span>
+          </div>
+
+          <div class="story-time-block">
+            <div class="story-clock" id="storyClockLabel">STEP 01</div>
+            <div class="story-time" id="storyTime">Select Trade</div>
+          </div>
+
+          <div class="story-device-stage">
+            <div class="story-callout-pill pill-top" id="storyPillTop">
+              <span class="pill-icon">👆</span>
+              <span class="pill-text" id="storyPillTopText">Tap ADD on any trade</span>
+            </div>
+
+            <div class="story-device-mockup">
+              <div class="story-device-screens">
+                <img src="/book-step-1.jpg" alt="Step 1: Choose Trade in OnBase App" class="story-icon story-screen-img on" data-icon="1" loading="lazy">
+                <img src="/book-step-2.jpg" alt="Step 2: Review Cart &amp; Site Details" class="story-icon story-screen-img" data-icon="2" loading="lazy">
+                <img src="/book-step-3.jpg" alt="Step 3: Choose Slot &amp; Shift Timing" class="story-icon story-screen-img" data-icon="3" loading="lazy">
+              </div>
+            </div>
+
+            <div class="story-callout-pill pill-bottom" id="storyPillBottom">
+              <span class="pill-icon">🛡️</span>
+              <span class="pill-text" id="storyPillBottomText">Verified site masons</span>
+            </div>
+          </div>
+
+          <div class="story-caption" id="storyCaption">Browse trades and tap ADD to build your crew.</div>
+        </div>
+      </div>
+
+      <div class="story-steps">
+        <div class="st-step" data-step="1">
+          <span class="tag">Step 1 · Choose Trade</span>
+          <h3>Pick your trade &amp; headcount</h3>
+          <p>Open the OnBase app and browse verified tradesmen — brick masons, plasterers, tilers, and helpers. Tap ADD to select the exact crew required for your project.</p>
+        </div>
+        <div class="st-step" data-step="2">
+          <span class="tag">Step 2 · Review Cart &amp; Site Details</span>
+          <h3>Review cart, add helpers &amp; site location</h3>
+          <p>Add helper labor if needed, enter your site address and supervisor contact details, and review the transparent payout with ₹0 platform booking fees.</p>
+        </div>
+        <div class="st-step" data-step="3">
+          <span class="tag">Step 3 · Schedule Shift &amp; Confirm</span>
+          <h3>Choose your dates, hours &amp; confirm slot</h3>
+          <p>Select single-day or multi-day schedules, pick your exact shift working hours (e.g. 9:00 AM to 5:00 PM), and tap Confirm Slot to lock in your verified crew.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE VIEW: Dedicated Card with Image for Every Step -->
+    <div class="how-mobile-steps how-mobile-only">
       <!-- Step 1 Card -->
-      <div class="how-step-card reveal stagger-1">
+      <div class="how-step-card reveal">
         <div class="how-card-head">
           <div class="how-step-badge">
             <span class="badge-num">01</span>
@@ -225,7 +284,7 @@
       </div>
 
       <!-- Step 2 Card -->
-      <div class="how-step-card reveal stagger-2">
+      <div class="how-step-card reveal">
         <div class="how-card-head">
           <div class="how-step-badge">
             <span class="badge-num">02</span>
@@ -251,7 +310,7 @@
       </div>
 
       <!-- Step 3 Card -->
-      <div class="how-step-card reveal stagger-3">
+      <div class="how-step-card reveal">
         <div class="how-card-head">
           <div class="how-step-badge">
             <span class="badge-num">03</span>
@@ -275,18 +334,18 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Bottom Action Card -->
-    <div class="how-bottom-banner reveal">
-      <div class="how-banner-text">
-        <h4>Need verified workers on site tomorrow morning?</h4>
-        <p>Book your crew in under 2 minutes with transparent rates and zero platform fees.</p>
+      <!-- Bottom Action Card for Mobile -->
+      <div class="how-bottom-banner reveal">
+        <div class="how-banner-text">
+          <h4>Need verified workers on site tomorrow morning?</h4>
+          <p>Book your crew in under 2 minutes with transparent rates and zero platform fees.</p>
+        </div>
+        <a href="#download-app" class="btn-primary">
+          <span>Get the App</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
-      <a href="#download-app" class="btn-primary">
-        <span>Get the App</span>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
     </div>
   </div>
 </section>
