@@ -200,6 +200,13 @@
     <div class="story-grid" id="storyGrid">
       <div class="story-visual-col">
         <div class="story-card" id="storyCard">
+          <!-- Mobile Step Tabs (visible on mobile/tablet) -->
+          <div class="story-mobile-tabs">
+            <button type="button" class="story-tab active" data-tab="1"><span>01</span> Trade</button>
+            <button type="button" class="story-tab" data-tab="2"><span>02</span> Cart</button>
+            <button type="button" class="story-tab" data-tab="3"><span>03</span> Slot</button>
+          </div>
+
           <div class="story-progress-track">
             <span><i id="prog1"></i></span>
             <span><i id="prog2"></i></span>
@@ -222,6 +229,29 @@
           </div>
 
           <div class="story-caption" id="storyCaption">Browse trades and tap ADD to build your crew.</div>
+
+          <!-- Mobile Step Details & Navigation (visible on mobile/tablet) -->
+          <div class="story-mobile-details">
+            <div class="story-mobile-desc">
+              <h4 id="storyMobileTitle">Pick your trade &amp; headcount</h4>
+              <p id="storyMobileBody">Open the OnBase app and browse verified tradesmen — brick masons, plasterers, tilers, and helpers. Tap ADD to select the exact crew required for your project.</p>
+            </div>
+            <div class="story-mobile-nav">
+              <button type="button" class="story-nav-btn prev-btn" id="storyPrevBtn" disabled aria-label="Previous step">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                <span>Back</span>
+              </button>
+              <div class="story-mobile-dots">
+                <span class="dot active" data-dot="1"></span>
+                <span class="dot" data-dot="2"></span>
+                <span class="dot" data-dot="3"></span>
+              </div>
+              <button type="button" class="story-nav-btn next-btn" id="storyNextBtn" aria-label="Next step">
+                <span id="storyNextBtnText">Next Step</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
