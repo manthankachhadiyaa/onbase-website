@@ -3,6 +3,10 @@ import type { StepData } from '../types';
 interface StepInfo extends StepData {
   title: string;
   desc: string;
+  pillTopIcon: string;
+  pillTopText: string;
+  pillBottomIcon: string;
+  pillBottomText: string;
 }
 
 export function initStory(): () => void {
@@ -20,6 +24,10 @@ export function initStory(): () => void {
   const storyPrevBtn = document.getElementById('storyPrevBtn') as HTMLButtonElement | null;
   const storyNextBtn = document.getElementById('storyNextBtn') as HTMLButtonElement | null;
   const storyNextBtnText = document.getElementById('storyNextBtnText');
+  const storyPillTop = document.getElementById('storyPillTop');
+  const storyPillBottom = document.getElementById('storyPillBottom');
+  const storyPillTopText = document.getElementById('storyPillTopText');
+  const storyPillBottomText = document.getElementById('storyPillBottomText');
 
   const progBars = [
     document.getElementById('prog1'),
@@ -34,7 +42,11 @@ export function initStory(): () => void {
       caption: 'Browse trades and tap ADD to build your crew.',
       glow: '85% -10%',
       title: 'Pick your trade & headcount',
-      desc: 'Open the OnBase app and browse verified tradesmen — brick masons, plasterers, tilers, and helpers. Tap ADD to select the exact crew required for your project.'
+      desc: 'Open the OnBase app and browse verified tradesmen — brick masons, plasterers, tilers, and helpers. Tap ADD to select the exact crew required for your project.',
+      pillTopIcon: '👆',
+      pillTopText: 'Tap ADD on any trade',
+      pillBottomIcon: '🛡️',
+      pillBottomText: 'Verified site masons'
     },
     2: {
       time: 'Review Cart',
@@ -42,7 +54,11 @@ export function initStory(): () => void {
       caption: 'Add helpers, site contact & address with ₹0 platform fee.',
       glow: '50% 30%',
       title: 'Review cart, add helpers & site location',
-      desc: 'Add helper labor if needed, enter your site address and supervisor contact details, and review the transparent payout with ₹0 platform booking fees.'
+      desc: 'Add helper labor if needed, enter your site address and supervisor contact details, and review the transparent payout with ₹0 platform booking fees.',
+      pillTopIcon: '💸',
+      pillTopText: '₹0 Platform Fee',
+      pillBottomIcon: '📍',
+      pillBottomText: 'Delivered to site'
     },
     3: {
       time: 'Book Slot',
@@ -50,7 +66,11 @@ export function initStory(): () => void {
       caption: 'Pick single or multi-day shift timings and confirm slot.',
       glow: '20% 75%',
       title: 'Choose your dates, hours & confirm slot',
-      desc: 'Select single-day or multi-day schedules, pick your exact shift working hours (e.g. 9:00 AM to 5:00 PM), and tap Confirm Slot to lock in your verified crew.'
+      desc: 'Select single-day or multi-day schedules, pick your exact shift working hours (e.g. 9:00 AM to 5:00 PM), and tap Confirm Slot to lock in your verified crew.',
+      pillTopIcon: '⏰',
+      pillTopText: '9 AM – 5 PM hours',
+      pillBottomIcon: '✅',
+      pillBottomText: 'Ready next morning'
     }
   };
 
@@ -70,6 +90,8 @@ export function initStory(): () => void {
 
     if (storyTimeBlock) storyTimeBlock.classList.add('transitioning');
     if (storyCaption) storyCaption.classList.add('transitioning');
+    if (storyPillTop) storyPillTop.classList.add('transitioning');
+    if (storyPillBottom) storyPillBottom.classList.add('transitioning');
 
     setTimeout(() => {
       if (storyTime) storyTime.textContent = d.time;
@@ -77,6 +99,20 @@ export function initStory(): () => void {
       if (storyCaption) storyCaption.textContent = d.caption;
       if (storyMobileTitle) storyMobileTitle.textContent = d.title;
       if (storyMobileBody) storyMobileBody.textContent = d.desc;
+
+      if (storyPillTop) {
+        const icon = storyPillTop.querySelector('.pill-icon');
+        if (icon) icon.textContent = d.pillTopIcon;
+        if (storyPillTopText) storyPillTopText.textContent = d.pillTopText;
+        storyPillTop.classList.remove('transitioning');
+      }
+      if (storyPillBottom) {
+        const icon = storyPillBottom.querySelector('.pill-icon');
+        if (icon) icon.textContent = d.pillBottomIcon;
+        if (storyPillBottomText) storyPillBottomText.textContent = d.pillBottomText;
+        storyPillBottom.classList.remove('transitioning');
+      }
+
       if (storyTimeBlock) storyTimeBlock.classList.remove('transitioning');
       if (storyCaption) storyCaption.classList.remove('transitioning');
     }, 160);
