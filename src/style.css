@@ -1007,6 +1007,11 @@
     ul.example-2{ justify-content:flex-start; }
   }
 
+  @media (max-width:600px){
+    header{ padding:14px 20px; }
+    .wrap{ padding:0 20px; }
+  }
+
   /* ==========================================================================
      ABOUT US PAGE (Main Page Design Language)
      ========================================================================== */
