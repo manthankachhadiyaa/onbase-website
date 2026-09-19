@@ -14,10 +14,12 @@
   <div class="logo"><span class="dot"></span>onbase</div>
   <nav>
     <a href="#trades">Trades</a>
-    <a href="#story">How it works</a>
+    <a href="#how-to-book">How to Book</a>
     <a href="#taste">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a href="/about.html">About Us</a>
   </nav>
-  <button class="crew-btn" id="crewBtn">Crew <span class="crew-count" id="crewCount">0</span></button>
+  <button class="crew-btn" onclick="document.getElementById('download-app')?.scrollIntoView({behavior:'smooth'})">Get App</button>
 </header>
 
 <section class="hero">
@@ -33,8 +35,8 @@
       <h1 class="hero-title">On site,<br>before the<br><em>sun's up.</em></h1>
       <p class="hero-sub">Book a mason, tiler or helper the night before they're already at your gate, tools in hand, when the site opens.</p>
       <div class="hero-ctas">
-        <a href="#trades" class="btn-primary">Book a worker</a>
-        <a href="#story" class="btn2"><span class="spn2">How it works</span></a>
+        <a href="#download-app" class="btn-primary">Get the App</a>
+        <a href="#trades" class="btn2"><span class="spn2">Explore Trades</span></a>
       </div>
     </div>
     <div class="hero-side">
@@ -64,7 +66,7 @@
     <div class="trades-header reveal">
       <div class="section-head" style="margin-bottom:0;">
         <h2>Every trade your site needs.</h2>
-        <p>Each worker is ID-verified before they're listed, and booked at one fixed daily rate no agents, no haggling at the gate.</p>
+        <p>Each worker is ID-verified and equipped before they're listed — specialized trades tailored to your site requirements.</p>
       </div>
       <div class="trade-nav-controls">
         <button class="trade-nav-btn prev" id="tradePrevBtn" aria-label="Previous trades">
@@ -86,13 +88,6 @@
             <div class="trade-name">Brick Mason Pair</div>
             <div class="trade-desc">Skilled bricklayer with active helper for precision walling, bonding &amp; brickwork.</div>
           </div>
-          <div class="trade-foot">
-            <div class="trade-price-box">
-              <span class="trade-price">₹1900</span>
-              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
-            </div>
-            <button class="add-btn" data-add aria-label="Add Brick Mason Pair">ADD</button>
-          </div>
         </div>
       </div>
 
@@ -104,13 +99,6 @@
             <span class="trade-tag">Plastering</span>
             <div class="trade-name">Plaster Mason Pair</div>
             <div class="trade-desc">Smooth internal &amp; external wall plastering, screed leveling and crack-free finish.</div>
-          </div>
-          <div class="trade-foot">
-            <div class="trade-price-box">
-              <span class="trade-price">₹1900</span>
-              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
-            </div>
-            <button class="add-btn" data-add aria-label="Add Plaster Mason Pair">ADD</button>
           </div>
         </div>
       </div>
@@ -124,13 +112,6 @@
             <div class="trade-name">Mason Helper</div>
             <div class="trade-desc">Mortar and cement mixing, brick transport, scaffolding assist and clean staging.</div>
           </div>
-          <div class="trade-foot">
-            <div class="trade-price-box">
-              <span class="trade-price">₹750</span>
-              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
-            </div>
-            <button class="add-btn" data-add aria-label="Add Mason Helper">ADD</button>
-          </div>
         </div>
       </div>
 
@@ -142,13 +123,6 @@
             <span class="trade-tag">Flooring</span>
             <div class="trade-name">Tile Mason Pair</div>
             <div class="trade-desc">Vitrified, ceramic &amp; marble tile laying, laser alignment, grouting and skirting.</div>
-          </div>
-          <div class="trade-foot">
-            <div class="trade-price-box">
-              <span class="trade-price">₹2350</span>
-              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
-            </div>
-            <button class="add-btn" data-add aria-label="Add Tile Mason Pair">ADD</button>
           </div>
         </div>
       </div>
@@ -162,13 +136,6 @@
             <div class="trade-name">Demolition Worker</div>
             <div class="trade-desc">Heavy masonry breaking, RCC chipping, tile stripping, trenching &amp; rubble disposal.</div>
           </div>
-          <div class="trade-foot">
-            <div class="trade-price-box">
-              <span class="trade-price">₹850</span>
-              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
-            </div>
-            <button class="add-btn" data-add aria-label="Add Demolition Worker">ADD</button>
-          </div>
         </div>
       </div>
 
@@ -180,13 +147,6 @@
             <span class="trade-tag">Formwork</span>
             <div class="trade-name">Centing Pair</div>
             <div class="trade-desc">Column, beam and slab shuttering, wooden staging, prop support &amp; box assembly.</div>
-          </div>
-          <div class="trade-foot">
-            <div class="trade-price-box">
-              <span class="trade-price">₹2150</span>
-              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
-            </div>
-            <button class="add-btn" data-add aria-label="Add Centing Pair">ADD</button>
           </div>
         </div>
       </div>
@@ -200,13 +160,6 @@
             <div class="trade-name">Reinforcement Karigar</div>
             <div class="trade-desc">Steel rebar cutting, bending, column cage binding &amp; slab reinforcement mesh tying.</div>
           </div>
-          <div class="trade-foot">
-            <div class="trade-price-box">
-              <span class="trade-price">₹2150</span>
-              <span class="trade-meta">8 hr • 🛺 +2.5 km</span>
-            </div>
-            <button class="add-btn" data-add aria-label="Add Reinforcement Karigar">ADD</button>
-          </div>
         </div>
       </div>
     </div>
@@ -215,14 +168,33 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
     </button>
   </div>
+
+  <div class="trade-app-callout reveal">
+    <div class="trade-app-callout-text">
+      <div class="trade-app-callout-title">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        Need any of these trades tomorrow?
+      </div>
+      <div class="trade-app-callout-desc">
+        Book certified workers in minutes, track live arrival &amp; attendance, and manage shifts with 0% platform fees on the OnBase App.
+      </div>
+    </div>
+    <div class="trade-app-callout-actions">
+      <a href="#download-app" class="trade-app-btn">
+        <span>Get the App</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
 </div>
 </section>
 
-<section id="story" class="story-section">
+<section id="how-to-book" class="story-section">
   <div class="wrap">
     <div class="section-head reveal">
-      <h2>A booking made tonight, working by morning.</h2>
-      <p>No phone calls, no contractors to chase down. Scroll to see what happens between the tap and the tools on site.</p>
+      <div class="eyebrow-plain" style="margin-bottom:12px;"><span class="live-dot"></span>Easy 3-step booking</div>
+      <h2>How to book your crew in 3 simple steps.</h2>
+      <p>From choosing your trade to worker arrival on site — see how fast and seamless booking is inside the OnBase app.</p>
     </div>
 
     <div class="story-grid" id="storyGrid">
@@ -235,59 +207,39 @@
           </div>
 
           <div class="story-time-block">
-            <div class="story-clock" id="storyClockLabel">6:00 PM · You</div>
-            <div class="story-time" id="storyTime">6:00 PM</div>
+            <div class="story-clock" id="storyClockLabel">STEP 01</div>
+            <div class="story-time" id="storyTime">Select Trade</div>
           </div>
 
-          <div class="story-icon-stage">
-            <!-- step 1: tapping a request into the app -->
-            <svg class="story-icon on" data-icon="1" viewBox="0 0 150 150" fill="none">
-              <rect x="45" y="18" width="60" height="114" rx="14" stroke="#f6f2e9" stroke-width="3"/>
-              <line x1="63" y1="30" x2="87" y2="30" stroke="#f6f2e9" stroke-width="3" stroke-linecap="round"/>
-              <circle cx="75" cy="118" r="4" fill="#f6f2e9"/>
-              <rect x="58" y="48" width="34" height="34" rx="8" fill="#ff6900"/>
-              <path d="M67 65 l6 6 12 -12" stroke="#121c29" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-              <line x1="58" y1="96" x2="92" y2="96" stroke="#f6f2e9" stroke-width="2.5" stroke-linecap="round" opacity=".6"/>
-              <line x1="58" y1="105" x2="80" y2="105" stroke="#f6f2e9" stroke-width="2.5" stroke-linecap="round" opacity=".4"/>
-            </svg>
-            <!-- step 2: worker matched, confirmed badge -->
-            <svg class="story-icon" data-icon="2" viewBox="0 0 150 150" fill="none">
-              <circle cx="75" cy="66" r="46" stroke="#f6f2e9" stroke-width="3"/>
-              <circle cx="75" cy="66" r="46" stroke="#ff6900" stroke-width="3" stroke-dasharray="289" stroke-dashoffset="72" stroke-linecap="round" transform="rotate(-90 75 66)"/>
-              <circle cx="75" cy="55" r="14" fill="#f6f2e9"/>
-              <path d="M50 96 q25 -22 50 0" stroke="#f6f2e9" stroke-width="3" fill="none" stroke-linecap="round"/>
-              <circle cx="118" cy="98" r="16" fill="#ff6900"/>
-              <path d="M111 98 l5 5 10 -10" stroke="#121c29" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <!-- step 3: hard hat, tools on site -->
-            <svg class="story-icon" data-icon="3" viewBox="0 0 150 150" fill="none">
-              <path d="M32 96 q43 -58 86 0 z" stroke="#f6f2e9" stroke-width="3" stroke-linejoin="round"/>
-              <line x1="24" y1="96" x2="126" y2="96" stroke="#f6f2e9" stroke-width="4" stroke-linecap="round"/>
-              <rect x="66" y="64" width="18" height="14" rx="3" fill="#ff6900"/>
-              <circle cx="112" cy="40" r="15" stroke="#ff6900" stroke-width="3"/>
-              <path d="M112 40 L112 28 M112 40 L121 47" stroke="#ff6900" stroke-width="3" stroke-linecap="round"/>
-            </svg>
+          <div class="story-device-stage">
+            <div class="story-device-mockup">
+              <div class="story-device-screens">
+                <img src="/book-step-1.jpg" alt="Step 1: Choose Trade in OnBase App" class="story-icon story-screen-img on" data-icon="1" loading="lazy">
+                <img src="/book-step-2.jpg" alt="Step 2: Review Cart &amp; Site Details" class="story-icon story-screen-img" data-icon="2" loading="lazy">
+                <img src="/book-step-3.jpg" alt="Step 3: Choose Slot &amp; Shift Timing" class="story-icon story-screen-img" data-icon="3" loading="lazy">
+              </div>
+            </div>
           </div>
 
-          <div class="story-caption" id="storyCaption">Tell us the trade and headcount for tomorrow.</div>
+          <div class="story-caption" id="storyCaption">Browse trades and tap ADD to build your crew.</div>
         </div>
       </div>
 
       <div class="story-steps">
         <div class="st-step" data-step="1">
-          <span class="tag">6:00 PM · You</span>
-          <h3>Tell us the trade &amp; headcount</h3>
-          <p>Pick the worker type, how many hands you need, and the date they should be on site.</p>
+          <span class="tag">Step 1 · Choose Trade</span>
+          <h3>Pick your trade &amp; headcount</h3>
+          <p>Open the OnBase app and browse verified tradesmen — brick masons, plasterers, tilers, and helpers. Tap ADD to select the exact crew required for your project.</p>
         </div>
         <div class="st-step" data-step="2">
-          <span class="tag">6:45 PM · OnBase</span>
-          <h3>A verified worker is matched</h3>
-          <p>We lock a fixed daily rate and confirm the worker in the app no back and forth, no agents.</p>
+          <span class="tag">Step 2 · Review Cart &amp; Site Details</span>
+          <h3>Review cart, add helpers &amp; site location</h3>
+          <p>Add helper labor if needed, enter your site address and supervisor contact details, and review the transparent payout with ₹0 platform booking fees.</p>
         </div>
         <div class="st-step" data-step="3">
-          <span class="tag">7:00 AM · Site</span>
-          <h3>Worker clocks in on site</h3>
-          <p>Tools in hand, ready to start before the rest of the crew has even reached the gate.</p>
+          <span class="tag">Step 3 · Schedule Shift &amp; Confirm</span>
+          <h3>Choose your dates, hours &amp; confirm slot</h3>
+          <p>Select single-day or multi-day schedules, pick your exact shift working hours (e.g. 9:00 AM to 5:00 PM), and tap Confirm Slot to lock in your verified crew.</p>
         </div>
       </div>
     </div>
@@ -346,17 +298,233 @@
   </div>
 </section>
 
-<section class="game-section">
+<!-- Frequently Asked Questions Section -->
+<section id="faq" class="faq-section">
+  <div class="faq-bg-glow-1"></div>
+  <div class="faq-bg-glow-2"></div>
   <div class="wrap">
-    <div class="section-head reveal" style="margin-left:auto; margin-right:auto; text-align:center;">
-      <h2>Lay a few bricks, just because.</h2>
-      <p style="margin-left:auto; margin-right:auto;">Click the bricks before they drift off the top of the wall.</p>
+    <div class="section-head reveal" style="text-align:center; margin-left:auto; margin-right:auto; max-width:760px; margin-bottom:48px;">
+      <div class="eyebrow-plain" style="margin-left:auto; margin-right:auto; margin-bottom:14px;"><span class="live-dot"></span>Got Questions?</div>
+      <h2 style="font-size:clamp(32px, 3.8vw, 48px); letter-spacing:-0.025em; text-transform:uppercase;">Frequently Asked <span style="color:var(--orange);">Questions</span></h2>
+      <p style="margin-left:auto; margin-right:auto; max-width:600px; color:rgba(246,242,233,0.76); font-size:clamp(15px,1.3vw,17px);">Everything you need to know before booking skilled workers through Onbase.</p>
     </div>
-    <div class="game-canvas-wrap reveal">
-      <div class="game-score">Laid: <span id="score">0</span></div>
-      <canvas id="game"></canvas>
+
+    <div class="faq-list reveal">
+      <div class="faq-item open">
+        <button class="faq-question" aria-expanded="true">
+          <span class="faq-title">What is Onbase?</span>
+          <span class="faq-icon-box" aria-hidden="true">
+            <svg class="faq-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p class="faq-text">Onbase is a platform that connects builders, contractors, and site managers with skilled workers on-demand. You can book workers such as brick masons, carpenters, painters, and electricians for daily jobs, ensuring fast and reliable service.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-title">How does booking work?</span>
+          <span class="faq-icon-box" aria-hidden="true">
+            <svg class="faq-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p class="faq-text">You can book workers through our app or website. All bookings must be made at least one day in advance so we can assign the right workers to your site.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-title">What is the pricing model?</span>
+          <span class="faq-icon-box" aria-hidden="true">
+            <svg class="faq-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p class="faq-text">Pricing is based on a fixed daily rate per worker. You know the cost upfront — no hidden charges or hourly surprises.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-title">What types of workers can I book?</span>
+          <span class="faq-icon-box" aria-hidden="true">
+            <svg class="faq-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p class="faq-text">We provide verified construction workers for Brick Masonry, Plastering, Centering, Reinforcement, Helpers, and other construction services. As Onbase grows, we'll continue adding more skilled worker categories to meet your project needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-title">Do workers bring their own tools?</span>
+          <span class="faq-icon-box" aria-hidden="true">
+            <svg class="faq-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p class="faq-text">Workers come with basic tools. For specialized equipment or materials, you may need to provide them on-site.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-title">When will the worker arrive?</span>
+          <span class="faq-icon-box" aria-hidden="true">
+            <svg class="faq-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p class="faq-text">Since booking is confirmed one day before, workers arrive the next morning at your site, ready to start the day’s work.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-title">How do payments work?</span>
+          <span class="faq-icon-box" aria-hidden="true">
+            <svg class="faq-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p class="faq-text">Payments are made securely through our app. You’re charged only after the worker has completed the booked day of work.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-title">Is it safe to book workers through Onbase?</span>
+          <span class="faq-icon-box" aria-hidden="true">
+            <svg class="faq-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p class="faq-text">Yes. All workers are verified and screened for skills and reliability. Your safety and work quality are our top priorities.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span class="faq-title">Where I can use this service?</span>
+          <span class="faq-icon-box" aria-hidden="true">
+            <svg class="faq-icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p class="faq-text">Onbase services can be used for residential, commercial, and construction projects. Whether you're a homeowner, contractor, builder, or business, we deliver verified construction workers directly to your site. We currently serve Ahmedabad and are expanding to more locations soon.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="game-hint">Click or tap anywhere on the bricks</div>
+  </div>
+</section>
+
+<!-- Dedicated Mobile App Showcase Section -->
+<section id="download-app" class="app-showcase-section">
+  <div class="app-bg-glow-1"></div>
+  <div class="app-bg-glow-2"></div>
+  <div class="wrap app-download-grid">
+    <div class="app-showcase-content reveal">
+      <div class="eyebrow-plain"><span class="live-dot"></span>Available for iOS &amp; Android</div>
+      <h2>Your entire site crew,<br>right in <em>your pocket.</em></h2>
+      <p class="app-showcase-desc">Skip early morning phone calls and unverified crews. Book verified brick masons, plasterers, tilers, and site helpers directly to your site with transparent shifts, real-time arrival, and direct communication.</p>
+      
+      <div class="app-feature-list">
+        <div class="app-feature-item">
+          <span class="app-feature-icon">⚡</span>
+          <span>Same-day &amp; next-day dispatch</span>
+        </div>
+        <div class="app-feature-item">
+          <span class="app-feature-icon">🛡️</span>
+          <span>100% ID &amp; skill-verified tradesmen</span>
+        </div>
+        <div class="app-feature-item">
+          <span class="app-feature-icon">📍</span>
+          <span>Real-time site check-in &amp; tracking</span>
+        </div>
+        <div class="app-feature-item">
+          <span class="app-feature-icon">💸</span>
+          <span>Zero platform booking fees</span>
+        </div>
+      </div>
+
+      <div class="app-buttons-group">
+        <!-- Apple App Store -->
+        <a href="https://apps.apple.com/in/app/onbase-on-demand-site-workers/id6775058653" target="_blank" rel="noopener noreferrer" class="store-badge-btn" aria-label="Download on the Apple App Store">
+          <div class="store-badge-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.63-.77 1.06-1.85.94-2.93-.91.04-2.02.61-2.67 1.38-.58.67-1.09 1.77-.95 2.82 1.02.08 2.05-.5 2.68-1.27z"/>
+            </svg>
+          </div>
+          <div class="store-badge-text">
+            <span class="store-badge-sub">Download on the</span>
+            <span class="store-badge-main">App Store</span>
+          </div>
+        </a>
+
+        <!-- Google Play -->
+        <a href="https://play.google.com/store/apps/details?id=com.onbasenow.main" target="_blank" rel="noopener noreferrer" class="store-badge-btn" aria-label="Get it on Google Play">
+          <div class="store-badge-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M3.609 1.814L13.792 12 3.61 22.186c-.368-.387-.61-.955-.61-1.623V3.437c0-.668.242-1.236.61-1.623z" fill="#00D2FF"/>
+              <path d="M17.18 8.613L4.992.576C4.486.242 3.992.215 3.61.423l10.182 10.19 3.388-2z" fill="#00F076"/>
+              <path d="M17.18 15.387l-3.388-2-10.182 10.19c.382.208.876.181 1.382-.153l12.188-8.037z" fill="#FF385C"/>
+              <path d="M21.365 11.238l-4.185-2.625-3.388 3.387 3.388 3.387 4.185-2.625c1.077-.677 1.077-1.847 0-2.524z" fill="#FFDA00"/>
+            </svg>
+          </div>
+          <div class="store-badge-text">
+            <span class="store-badge-sub">GET IT ON</span>
+            <span class="store-badge-main">Google Play</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Quick Scan Card for Desktop -->
+      <div class="app-scan-helper">
+        <img src="/app-qr.png" alt="Scan QR Code to download OnBase app" class="app-qr-img" width="56" height="56">
+        <div class="app-scan-info">
+          <span class="app-scan-title">Scan to download app</span>
+          <span class="app-scan-desc">Point your phone camera to install instantly</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column: Floating Phone Mockup -->
+    <div class="app-mockup-wrapper reveal">
+      <div class="phone-glow-blob"></div>
+      
+      <!-- Micro-Badge Top -->
+      <div class="mockup-pill pill-top">
+        <span class="pill-accent">⚡</span> Worker matched in 12m
+      </div>
+
+      <img src="/app-mockup.png" alt="OnBase App Preview" class="phone-device-img" width="340" height="690" loading="lazy">
+
+      <!-- Micro-Badge Bottom -->
+      <div class="mockup-pill pill-bottom">
+        <span class="pill-accent">⭐</span> 4.9/5 verified rating
+      </div>
+    </div>
   </div>
 </section>
 
@@ -368,12 +536,16 @@
         <div class="footer-links">
           <div>
             <a href="#trades">Trades</a>
-            <a href="#story">How it works</a>
+            <a href="#how-to-book">How to Book</a>
             <a href="#taste">Reviews</a>
+            <a href="#faq">FAQ</a>
+            <a href="/about.html">About Us</a>
           </div>
           <div>
+            <a href="https://apps.apple.com/in/app/onbase-on-demand-site-workers/id6775058653" target="_blank" rel="noopener noreferrer">iOS App</a>
+            <a href="https://play.google.com/store/apps/details?id=com.onbasenow.main" target="_blank" rel="noopener noreferrer">Android App</a>
             <a href="mailto:support@onbase.com">Support</a>
-            <a href="#trades">Bookings</a>
+            <a href="#download-app">Get the App</a>
           </div>
         </div>
         <ul class="example-2">

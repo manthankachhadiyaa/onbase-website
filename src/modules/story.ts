@@ -15,9 +15,9 @@ export function initStory(): () => void {
   ];
 
   const stepData: Record<number, StepData> = {
-    1: { time: '6:00 PM', label: '6:00 PM · You', caption: 'Tell us the trade and headcount for tomorrow.', glow: '85% -10%' },
-    2: { time: '6:45 PM', label: '6:45 PM · OnBase', caption: 'A verified worker is matched at a fixed rate.', glow: '50% 30%' },
-    3: { time: '7:00 AM', label: '7:00 AM · Site', caption: 'Worker clocks in, tools already in hand.', glow: '20% 75%' }
+    1: { time: 'Select Trade', label: 'STEP 01', caption: 'Browse trades and tap ADD to build your crew.', glow: '85% -10%' },
+    2: { time: 'Review Cart', label: 'STEP 02', caption: 'Add helpers, site contact & address with ₹0 platform fee.', glow: '50% 30%' },
+    3: { time: 'Book Slot', label: 'STEP 03', caption: 'Pick single or multi-day shift timings and confirm slot.', glow: '20% 75%' }
   };
 
   let currentStoryStep = 0;

@@ -6,7 +6,7 @@ import { initStory } from './modules/story';
 import { initCarousel } from './modules/carousel';
 import { initCounters } from './modules/counters';
 import { initTestimonials } from './modules/testimonials';
-import { initGame } from './modules/game';
+import { initFaq } from './modules/faq';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Initialize Header and Story controllers first to register scroll listeners with Lenis
@@ -21,5 +21,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCarousel();
   initCounters();
   initTestimonials();
-  initGame();
+  initFaq();
 });
